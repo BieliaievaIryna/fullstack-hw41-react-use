@@ -4,15 +4,15 @@ import Loading from './components/Loading';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const App = () => {
-  
+
   return (
     <div>
       <h1>Messages</h1>
-    <ErrorBoundary>
-      <Suspense fallback={<Loading />}>
-        <MessageComponent />
-      </Suspense>
-    </ErrorBoundary>
+      <ErrorBoundary>
+        <Suspense fallback={<Loading />}>
+          <MessageComponent />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
